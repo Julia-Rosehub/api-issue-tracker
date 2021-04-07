@@ -8,7 +8,7 @@ const cors = require('cors');
 const routes = new Router();
 routes.use(bodyParser.json());
 
-const origin = process.env.UI_SERVER_ORIGIN || 'http://ui.promernstack.com:8080';
+const origin = process.env.UI_SERVER_ORIGIN || 'http://localhost:8080';
 
 let { JWT_SECRET } = process.env;
 
